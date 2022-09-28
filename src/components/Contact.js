@@ -48,9 +48,9 @@ function Contact() {
                 <div className='row d-flex'>
                     <div className='col-12 col-sm-10 col-lg-6 contact-info'>
                         <h1 className='font-epilogue-smbold'>Lets work together</h1>
-                        <span className='font-epilogue-regular'>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</span>
+                        <span className='font-epilogue-regular'>If you are interested in discussing or collaborating with me. Feel free to contact me by filling out the form beside. <br/><br/>Thank you 😊🚀</span>
                         <div className='row icons'>
-                            <a href='https://www.instagram.com/ivannaufal' target='_blank' rel="noopener noreferrer"><Image src='../assets/images/discord.png' style={{ width: '10%' }} /></a>
+                            <a href='https://www.linkedin.com/in/ivan-naufal/' target='_blank' rel="noopener noreferrer"><Image src='../assets/images/linkedin.png' style={{ width: '10%' }} /></a>
                             <a href='https://www.instagram.com/ivannaufal' target='_blank' rel="noopener noreferrer"><Image src='../assets/images/ig.png' style={{ width: '10%' }} /></a>
                             <a href='https://dribbble.com/ivannaufal10' target='_blank' rel="noopener noreferrer"><Image src='../assets/images/dribbble.png' style={{ width: '10%' }} /></a>
                         </div>

@@ -11,11 +11,23 @@ import PortoAPI from '../config/PortoAPI';
 
 function Home() {
     const [portos, setPortos] = useState([])
+    const [specialists, setSpecialists] = useState([])
+    const [testimonis, setTestimonis] = useState([])
 
     useEffect(() => {
         PortoAPI.find().then((res) => {
-            console.log(res)
+            console.log("Work : ", res)
             setPortos(res)
+        })
+
+        PortoAPI.findSpecialist().then((res) => {
+            console.log("Specialist Data : ", specialists)
+            setSpecialists(res)
+        })
+
+        PortoAPI.findReview().then((res) => {
+            console.log("Review: ", res)
+            setTestimonis(res)
         })
     }, [])
 
@@ -23,9 +35,9 @@ function Home() {
         <>
             <NavbarComponent></NavbarComponent>
             <Hero></Hero>
-            <Specialist></Specialist>
+            <Specialist specialists={specialists}></Specialist>
             <Works portos={portos}></Works>
-            <Testimoni></Testimoni>
+            <Testimoni testimonis={testimonis}></Testimoni>
             <Contact></Contact>
         </>
     )

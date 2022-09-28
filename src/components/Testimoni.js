@@ -2,7 +2,7 @@ import React from 'react'
 import Slider from 'react-slick'
 import { Card } from 'react-bootstrap'
 
-function Testimoni() {
+function Testimoni({ testimonis }) {
     const settings = {
         dots: true,
         autoplay: true,
@@ -45,18 +45,23 @@ function Testimoni() {
             </div>
             <div className='slider'>
                 <Slider {...settings}>
-                    <div className='col position-card'>
-                        <Card className='card-testimoni'>
-                            <Card.Body>
-                                <Card.Text className='font-epilogue-regular'>
-                                    Ivan Naufal is the most reliable and passionate member of the team when he participated in competitions with me when I was in college. Apart from understanding UI UX principles very well.
-                                </Card.Text>
-                                <Card.Subtitle className="mb-2 font-epilogue-smbold">Faishal Rachman</Card.Subtitle>
-                                <Card.Subtitle className="mb-2 super-subtitle font-epilogue-medium">Research Engineer at eFishery</Card.Subtitle>
-                            </Card.Body>
-                        </Card>
-                    </div>
-                    <div className='col position-card'>
+                    {
+                        testimonis.data?.map((data, i) =>
+                            <div className='col position-card'>
+                                <Card className='card-testimoni' key={i}>
+                                    <Card.Body>
+                                        <Card.Text className='font-epilogue-regular'>
+                                            {data.attributes.review}
+                                        </Card.Text>
+                                        <Card.Subtitle className="mb-2 font-epilogue-smbold">{data.attributes.name}</Card.Subtitle>
+                                        <Card.Subtitle className="mb-2 super-subtitle font-epilogue-medium">{data.attributes.job}</Card.Subtitle>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                        )
+                    }
+
+                    {/* <div className='col position-card'>
                         <Card className='card-testimoni'>
                             <Card.Body>
                                 <Card.Text className='font-epilogue-regular'>
@@ -88,7 +93,7 @@ function Testimoni() {
                                 <Card.Subtitle className="mb-2 super-subtitle font-epilogue-medium">Tech Talent Acquision Lead at Stockbit</Card.Subtitle>
                             </Card.Body>
                         </Card>
-                    </div>
+                    </div> */}
                 </Slider>
             </div>
         </>

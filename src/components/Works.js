@@ -39,7 +39,7 @@ function Works({ portos }) {
                     {
                         portos.data?.map((data, i) =>
                             <motion.div
-                                animate={animation} key={i} onClick={() => window.open(data.attributes.url, "_blank")}>
+                                animate={animation} key={i} onClick={() => window.open(data.attributes.url, "_self")}>
                                 <div className='col'>
                                     <Card className='text-start align-items-start border-0 card-work'>
                                         <Card.Img variant="top" src={data.attributes.thumbnail.data.attributes.url} style={{ width: '90%' }} />
