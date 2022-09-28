@@ -42,7 +42,7 @@ function Works({ portos }) {
                                 animate={animation} key={i} onClick={() => window.open(data.attributes.url, "_blank")}>
                                 <div className='col'>
                                     <Card className='text-start align-items-start border-0 card-work'>
-                                        <Card.Img variant="top" src={`http://localhost:1337${data.attributes.thumbnail.data.attributes.url}`} style={{ width: '90%' }} />
+                                        <Card.Img variant="top" src={data.attributes.thumbnail.data.attributes.url} style={{ width: '90%' }} />
                                         <Card.Title className='heading-title-work font-epilogue-smbold'>{data.attributes.title}</Card.Title>
                                         <Card.Text className='font-epilogue-regular'>{data.attributes.categories}</Card.Text>
                                     </Card>
@@ -50,67 +50,6 @@ function Works({ portos }) {
                             </motion.div>
                         )
                     }
-
-
-
-                    {/* <motion.div
-                        animate={animation}>
-                        <div className='col'>
-                            <Card className='text-start align-items-start border-0 card-work'>
-                                <Card.Img variant="top" src="../assets/images/2.png" style={{ width: '90%' }} />
-                                <Card.Title className='heading-title-work font-epilogue-smbold'>Project Title</Card.Title>
-                                <Card.Text className='font-epilogue-regular'>UI Design</Card.Text>
-                            </Card>
-                        </div>
-                    </motion.div>
-
-                    <motion.div
-                        animate={animation}>
-                        <div className='col'>
-                            <Card className='text-start align-items-start border-0 card-work'>
-                                <Card.Img variant="top" src="../assets/images/3.png" style={{ width: '90%' }} />
-                                <Card.Title className='heading-title-work font-epilogue-smbold'>Project Title</Card.Title>
-                                <Card.Text className='font-epilogue-regular'>UI Design</Card.Text>
-                            </Card>
-                        </div>
-                    </motion.div>
-
-                    <motion.div
-                        animate={animation}>
-                        <div className='col'>
-                            <Card className='text-start align-items-start border-0 card-work'>
-                                <Card.Img variant="top" src="../assets/images/4.png" style={{ width: '90%' }} />
-                                <Card.Title className='heading-title-work font-epilogue-smbold'>Project Title</Card.Title>
-                                <Card.Text className='font-epilogue-regular'>UI Design</Card.Text>
-                            </Card>
-                        </div>
-                    </motion.div>
-
-                    <motion.div
-                        animate={animation}>
-                        <div className='col'>
-                            <Card className='text-start align-items-start border-0 card-work'>
-                                <Card.Img variant="top" src="../assets/images/5.png" style={{ width: '90%' }} />
-                                <Card.Title className='heading-title-work font-epilogue-smbold'>Project Title</Card.Title>
-                                <Card.Text className='font-epilogue-regular'>UI Design</Card.Text>
-                            </Card>
-                        </div>
-                    </motion.div>
-
-                    <motion.div
-                        animate={animation}>
-                        <div className='col'>
-                            <Card className='text-start align-items-start border-0 card-work'>
-                                <Card.Img variant="top" src="../assets/images/6.png" style={{ width: '90%' }} />
-                                <Card.Title className='heading-title-work font-epilogue-smbold'>Project Title</Card.Title>
-                                <Card.Text className='font-epilogue-regular'>UI Design</Card.Text>
-                            </Card>
-                        </div>
-                    </motion.div> */}
-
-
-
-
 
                 </div>
 
