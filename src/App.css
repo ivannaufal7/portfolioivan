@@ -1,0 +1,176 @@
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.hero{
+  margin-left: 2rem;
+  margin-bottom: 8rem;
+}
+
+.card-work:hover{
+  cursor: pointer;
+}
+.card-work{
+  margin-bottom: 4rem;
+}
+
+.card-specialist{
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.heading-title{
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.heading-title-work{
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.card-content{
+  font-size: 16px;
+  margin-top: 1rem;
+}
+
+.slider{
+  margin-left: 4rem !important;
+  margin-right: 4rem !important;
+  margin-bottom: 6rem;
+}
+
+.card-testimoni{
+   width: 24rem;
+   background-color: #F3F3F3;
+   height: 100%;
+   border: 0px;
+}
+
+.super-subtitle{
+  font-size: 12px !important;
+}
+
+.img-profiles{
+  margin-top: 4rem !important;
+}
+
+.form-contact{
+  background-color: #F3F3F3;
+  padding: 16px;
+}
+
+.contact{
+  margin-bottom: 10rem;
+}
+
+.contact-info h1{
+  margin-bottom: 2rem;
+}
+
+.icons{
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  display: inline-block;
+}
+
+.font-epilogue-light{
+  font-family: 'Epilogue', -apple-system, BlinkMacSystemFont;
+  font-weight: 300;
+}
+
+.font-epilogue-regular{
+  font-family: 'Epilogue', -apple-system, BlinkMacSystemFont;
+  font-weight: 400;
+}
+
+.font-epilogue-medium{
+  font-family: 'Epilogue', -apple-system, BlinkMacSystemFont;
+  font-weight: 500;
+}
+
+.font-epilogue-smbold{
+  font-family: 'Epilogue', -apple-system, BlinkMacSystemFont;
+  font-weight: 600;
+}
+
+.font-epilogue-bold{
+  font-family: 'Epilogue', -apple-system, BlinkMacSystemFont;
+  font-weight: 700;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+  .img-profiles{
+    width: 100%;
+    height: 100%;
+  }
+  .contact-info{
+    text-align: center;
+    width: 100%;
+  }
+  .icons{
+    justify-content: center !important;
+  }
+  .position-card{
+    margin-left: 5rem;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .col > .card-work{
+    align-items: center !important;
+  }
+
+  .heading-title-work{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 1rem;
+    text-align: left !important;
+  } 
+  .contact-info{
+    text-align: center;
+  }
+  .icons{
+    justify-content: center !important;
+  }
+  .img-profiles{
+    margin-left: 2rem;
+  }
+  .card-testimoni{
+    width: 80%;
+  }
+  .position-card{
+    margin-left: 2.5rem;
+  }
+}
