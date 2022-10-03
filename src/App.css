@@ -118,6 +118,26 @@
   font-weight: 700;
 }
 
+.btn-green{
+  background-color: #009379;
+  color: white;
+}
+
+.btn-green:hover, .btn-green:focus, .btn-green:active{
+  background-color: #04a88a !important;
+  color: white !important;
+}
+
+.btn-red{
+  background-color: #FF6250;
+  color: white;
+}
+
+.btn-red:hover, .btn-red:focus, .btn-red:active{
+  background-color: #ff8476 !important;
+  color: white !important;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
