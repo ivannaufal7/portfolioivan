@@ -35,7 +35,7 @@ function Hero() {
                         <span className='display-7 font-epilogue-medium'>Ivan Naufal Islami Al Faridzqi</span><br />
                         <span className='display-3 font-epilogue-bold'>UI/UX Designer & Front-end Dev</span><br />
                         <div className='d-flex'>
-                            <a href='https://drive.google.com/file/d/1iL8YiVVKJ2Wq22vuD5e66XMfT-JSFd8s/view?usp=sharing' target="_self" rel="noopener noreferrer" className='btn btn-lg btn-green'>Download Resume</a>
+                            <a href='https://drive.google.com/file/d/1X6gt_Y65oZ7fHxLHSfyLWBPpFI6nBgCe/view?usp=sharing' target="_self" rel="noopener noreferrer" className='btn btn-lg btn-green'>Download CV</a>
                             <a href='https://drive.google.com/file/d/1i7t1FHHg0XKbtkcLKLPbW6UW0bT-kkHL/view' target="_self" rel="noopener noreferrer" className='btn btn-lg btn-red mx-2'>Download Portfolio</a>
                         </div>
                     </div>
